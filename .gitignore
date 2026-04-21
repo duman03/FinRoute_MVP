@@ -2,6 +2,7 @@ node_modules/
 dist/
 .env
 .env.local
+deploy/.env.production
 *.log
 error.txt
 .DS_Store

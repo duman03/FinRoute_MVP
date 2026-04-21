@@ -62,6 +62,10 @@ function checkNoPattern(relativeDirs: string[], pattern: RegExp, message: string
 function run(): void {
   const requiredFiles = [
     'backend/.env.example',
+    'backend/Dockerfile.prod',
+    'backend/scripts/run-migrations.js',
+    'deploy/.env.production.example',
+    'docker-compose.prod.yml',
     'mobile/.env.example',
     'mobile/.env.production.example',
     'mobile/app.config.js',
@@ -71,6 +75,8 @@ function run(): void {
     'mobile/assets/splash-icon.png',
     'nginx/html/privacy/index.html',
     'nginx/html/delete-account/index.html',
+    'nginx/nginx.prod.bootstrap.conf',
+    'nginx/nginx.prod.ssl.conf',
     'backend/src/jobs/account-cleanup.job.ts',
     'backend/migrations/023_account_deletion_release_policy.sql',
     'release/README.md',
@@ -78,6 +84,7 @@ function run(): void {
     'release/store/app-store-metadata.md',
     'release/store/play-store-metadata.md',
     'release/store/review-notes.md',
+    'release/deploy-vps-runbook.md',
     '.github/workflows/release-readiness.yml',
   ];
 
@@ -89,7 +96,21 @@ function run(): void {
   checkIncludes('backend/.env.example', 'PORT=3001');
   checkIncludes('docker-compose.yml', 'PORT: 3001');
   checkIncludes('docker-compose.yml', '"3001:3001"');
+  checkIncludes('docker-compose.prod.yml', 'Dockerfile.prod');
+  checkIncludes('docker-compose.prod.yml', 'NODE_ENV: production');
+  checkIncludes('docker-compose.prod.yml', '"443:443"');
+  checkIncludes('docker-compose.prod.yml', 'certbot');
+  checkIncludes('backend/Dockerfile.prod', 'npm run build');
+  checkIncludes('backend/Dockerfile.prod', 'npm ci --omit=dev');
+  checkIncludes('backend/Dockerfile.prod', 'scripts/run-migrations.js');
+  checkIncludes('backend/Dockerfile.prod', 'npm\", \"start');
+  checkIncludes('backend/package.json', '"migrate:prod": "node scripts/run-migrations.js"');
   checkIncludes('nginx/nginx.conf', 'server backend:3001;');
+  checkIncludes('nginx/nginx.prod.bootstrap.conf', 'api.finrouteapp.com');
+  checkIncludes('nginx/nginx.prod.ssl.conf', 'ssl_certificate');
+  checkIncludes('nginx/nginx.prod.ssl.conf', 'api.finrouteapp.com');
+  checkIncludes('deploy/.env.production.example', 'NGINX_CONF_PATH=./nginx/nginx.prod.bootstrap.conf');
+  checkIncludes('release/deploy-vps-runbook.md', 'docker compose --env-file deploy/.env.production');
   checkIncludes('backend/src/config/env.ts', "default('3001')");
   checkIncludes('mobile/eas.json', 'https://api.finrouteapp.com/api/v1');
   checkIncludes('mobile/eas.json', 'wss://api.finrouteapp.com');

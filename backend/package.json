@@ -11,6 +11,7 @@
     "build": "tsc",
     "typecheck": "tsc --noEmit",
     "migrate": "ts-node scripts/run-migrations.ts",
+    "migrate:prod": "node scripts/run-migrations.js",
     "smoke:week8": "ts-node scripts/week8-smoke.ts",
     "verify:release": "ts-node scripts/verify-release.ts",
     "ci:release": "npm run build && npm run typecheck && npm run verify:release",
