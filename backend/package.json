@@ -1,0 +1,56 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "migrate": "ts-node scripts/run-migrations.ts",
+    "smoke:week8": "ts-node scripts/week8-smoke.ts",
+    "verify:release": "ts-node scripts/verify-release.ts",
+    "ci:release": "npm run build && npm run typecheck && npm run verify:release",
+    "start": "node dist/index.js",
+    "test": "npm run typecheck"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/compression": "^1.8.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.5.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/pg": "^8.20.0",
+    "@types/ws": "^8.18.1",
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.14",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "bullmq": "^5.71.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.10.1",
+    "jsonwebtoken": "^9.0.3",
+    "node-cron": "^4.2.1",
+    "pg": "^8.20.0",
+    "ws": "^8.20.0",
+    "zod": "^4.3.6"
+  }
+}

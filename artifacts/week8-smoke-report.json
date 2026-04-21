@@ -1,0 +1,314 @@
+{
+  "api": {
+    "global": {
+      "body": {
+        "data": {
+          "entries": [
+            {
+              "rank": 1,
+              "userId": "36daf13a-4d79-4818-aa73-55c6a72a889f",
+              "score": 120,
+              "displayName": "Week8 Alpha"
+            },
+            {
+              "rank": 2,
+              "userId": "c77e9f09-24d4-4224-a441-219c753430cd",
+              "score": 80,
+              "displayName": "Week8 Charlie"
+            },
+            {
+              "rank": 3,
+              "userId": "7ec324b1-dced-4517-a0c5-85d3bc3500b7",
+              "score": 80,
+              "displayName": "Week8 Bravo"
+            }
+          ],
+          "leagueSlug": null,
+          "myRank": {
+            "rank": 1,
+            "score": 120
+          },
+          "type": "global"
+        },
+        "meta": {
+          "count": 3,
+          "generatedAt": "2026-04-21T10:27:00.454Z",
+          "limit": 10
+        }
+      },
+      "status": 200
+    },
+    "league": {
+      "body": {
+        "data": {
+          "entries": [
+            {
+              "rank": 1,
+              "userId": "36daf13a-4d79-4818-aa73-55c6a72a889f",
+              "score": 120,
+              "displayName": "Week8 Alpha"
+            },
+            {
+              "rank": 2,
+              "userId": "7ec324b1-dced-4517-a0c5-85d3bc3500b7",
+              "score": 80,
+              "displayName": "Week8 Bravo"
+            },
+            {
+              "rank": 3,
+              "userId": "c77e9f09-24d4-4224-a441-219c753430cd",
+              "score": 80,
+              "displayName": "Week8 Charlie"
+            }
+          ],
+          "leagueSlug": "bronze",
+          "myRank": {
+            "rank": 1,
+            "score": 120
+          },
+          "type": "league"
+        },
+        "meta": {
+          "count": 3,
+          "generatedAt": "2026-04-21T10:27:00.105Z",
+          "limit": 10
+        }
+      },
+      "status": 200
+    }
+  },
+  "awards": [
+    {
+      "displayName": "Week8 Alpha",
+      "result": {
+        "awarded": true,
+        "xp": 120
+      },
+      "userId": "36daf13a-4d79-4818-aa73-55c6a72a889f",
+      "xp": 120
+    },
+    {
+      "displayName": "Week8 Bravo",
+      "result": {
+        "awarded": true,
+        "xp": 80
+      },
+      "userId": "7ec324b1-dced-4517-a0c5-85d3bc3500b7",
+      "xp": 80
+    },
+    {
+      "displayName": "Week8 Charlie",
+      "result": {
+        "awarded": true,
+        "xp": 80
+      },
+      "userId": "c77e9f09-24d4-4224-a441-219c753430cd",
+      "xp": 80
+    }
+  ],
+  "currentWeekStart": "2026-04-20",
+  "leagueEntries": [
+    {
+      "rank": 1,
+      "userId": "36daf13a-4d79-4818-aa73-55c6a72a889f",
+      "score": 120,
+      "displayName": "Week8 Alpha"
+    },
+    {
+      "rank": 2,
+      "userId": "7ec324b1-dced-4517-a0c5-85d3bc3500b7",
+      "score": 80,
+      "displayName": "Week8 Bravo"
+    },
+    {
+      "rank": 3,
+      "userId": "c77e9f09-24d4-4224-a441-219c753430cd",
+      "score": 80,
+      "displayName": "Week8 Charlie"
+    }
+  ],
+  "leagueSlug": "bronze",
+  "leagueUserRank": {
+    "displayName": "Week8 Bravo",
+    "userId": "7ec324b1-dced-4517-a0c5-85d3bc3500b7",
+    "value": {
+      "rank": 2,
+      "score": 80
+    }
+  },
+  "globalEntries": [
+    {
+      "rank": 1,
+      "userId": "36daf13a-4d79-4818-aa73-55c6a72a889f",
+      "score": 120,
+      "displayName": "Week8 Alpha"
+    },
+    {
+      "rank": 2,
+      "userId": "c77e9f09-24d4-4224-a441-219c753430cd",
+      "score": 80,
+      "displayName": "Week8 Charlie"
+    },
+    {
+      "rank": 3,
+      "userId": "7ec324b1-dced-4517-a0c5-85d3bc3500b7",
+      "score": 80,
+      "displayName": "Week8 Bravo"
+    }
+  ],
+  "repeatableJobs": {
+    "leaderboard": [
+      {
+        "key": "leaderboard-full-reconcile-weekly",
+        "name": "full-reconcile",
+        "endDate": null,
+        "tz": "UTC",
+        "pattern": "30 23 * * 6",
+        "every": null,
+        "next": 1777159800000
+      }
+    ],
+    "leaguePromotion": [
+      {
+        "key": "league-promotion-weekly",
+        "name": "promote-relegate",
+        "endDate": null,
+        "tz": "UTC",
+        "pattern": "0 0 * * 0",
+        "every": null,
+        "next": 1777161600000
+      }
+    ]
+  },
+  "repairs": {
+    "fullReconcile": {
+      "global": 80,
+      "league": 80
+    },
+    "syncUser": {
+      "global": 80,
+      "league": 80
+    }
+  },
+  "seededAssignments": [
+    {
+      "createdAt": "2026-04-21T10:26:59.191Z",
+      "displayName": "Week8 Alpha",
+      "leagueSlug": "bronze",
+      "userId": "36daf13a-4d79-4818-aa73-55c6a72a889f"
+    },
+    {
+      "createdAt": "2026-04-21T10:26:59.257Z",
+      "displayName": "Week8 Bravo",
+      "leagueSlug": "bronze",
+      "userId": "7ec324b1-dced-4517-a0c5-85d3bc3500b7"
+    },
+    {
+      "createdAt": "2026-04-21T10:26:59.319Z",
+      "displayName": "Week8 Charlie",
+      "leagueSlug": "bronze",
+      "userId": "c77e9f09-24d4-4224-a441-219c753430cd"
+    }
+  ],
+  "snapshot": [
+    {
+      "userId": "36daf13a-4d79-4818-aa73-55c6a72a889f",
+      "score": 120,
+      "joinedAt": "2026-04-21T10:26:59.191Z"
+    },
+    {
+      "userId": "7ec324b1-dced-4517-a0c5-85d3bc3500b7",
+      "score": 80,
+      "joinedAt": "2026-04-21T10:26:59.257Z"
+    },
+    {
+      "userId": "c77e9f09-24d4-4224-a441-219c753430cd",
+      "score": 80,
+      "joinedAt": "2026-04-21T10:26:59.319Z"
+    }
+  ],
+  "syntheticPromotion": {
+    "nextWeekAssignments": [
+      {
+        "user_id": "10000000-0000-4000-8000-000000000001",
+        "league_slug": "silver"
+      },
+      {
+        "user_id": "20000000-0000-4000-8000-000000000002",
+        "league_slug": "bronze"
+      },
+      {
+        "user_id": "30000000-0000-4000-8000-000000000003",
+        "league_slug": "bronze"
+      },
+      {
+        "user_id": "40000000-0000-4000-8000-000000000004",
+        "league_slug": "bronze"
+      },
+      {
+        "user_id": "50000000-0000-4000-8000-000000000005",
+        "league_slug": "bronze"
+      }
+    ],
+    "rewardLogCount": 3,
+    "syntheticWeekStart": "2099-01-05",
+    "weeklyResults": [
+      {
+        "user_id": "10000000-0000-4000-8000-000000000001",
+        "final_rank": 1,
+        "final_xp": 500,
+        "result": "PROMOTED"
+      },
+      {
+        "user_id": "20000000-0000-4000-8000-000000000002",
+        "final_rank": 2,
+        "final_xp": 400,
+        "result": "STAYED"
+      },
+      {
+        "user_id": "30000000-0000-4000-8000-000000000003",
+        "final_rank": 3,
+        "final_xp": 300,
+        "result": "STAYED"
+      },
+      {
+        "user_id": "40000000-0000-4000-8000-000000000004",
+        "final_rank": 4,
+        "final_xp": 200,
+        "result": "STAYED"
+      },
+      {
+        "user_id": "50000000-0000-4000-8000-000000000005",
+        "final_rank": 5,
+        "final_xp": 100,
+        "result": "RELEGATED"
+      }
+    ],
+    "winnerBadges": [
+      {
+        "user_id": "10000000-0000-4000-8000-000000000001",
+        "badge_slug": "league-champion-bronze"
+      },
+      {
+        "user_id": "20000000-0000-4000-8000-000000000002",
+        "badge_slug": "league-runner-up-bronze"
+      },
+      {
+        "user_id": "30000000-0000-4000-8000-000000000003",
+        "badge_slug": "league-third-place-bronze"
+      }
+    ]
+  },
+  "syntheticTieBreaker": {
+    "rawRedisOrder": [
+      "ffffffff-ffff-4fff-afff-ffffffffffff",
+      "00000000-0000-4000-8000-000000000001"
+    ],
+    "snapshotOrder": [
+      "00000000-0000-4000-8000-000000000001",
+      "ffffffff-ffff-4fff-afff-ffffffffffff"
+    ],
+    "syntheticWeekStart": "2099-01-05"
+  },
+  "timestamp": "2026-04-21T10:27:01.733Z"
+}

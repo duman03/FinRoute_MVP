@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 5.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://localhost:3001/api/v1",
+        "EXPO_PUBLIC_WS_URL": "ws://localhost:3001"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://staging-api.finrouteapp.com/api/v1",
+        "EXPO_PUBLIC_WS_URL": "wss://staging-api.finrouteapp.com"
+      },
+      "ios": {
+        "simulator": true
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.finrouteapp.com/api/v1",
+        "EXPO_PUBLIC_WS_URL": "wss://api.finrouteapp.com"
+      }
+    }
+  }
+}

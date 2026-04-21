@@ -1,0 +1,23 @@
+[
+    {
+        "email":  "week8.alpha.1774467923@finroute.test",
+        "displayName":  "Week8 Alpha",
+        "userId":  "36daf13a-4d79-4818-aa73-55c6a72a889f",
+        "accessToken":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNmRhZjEzYS00ZDc5LTQ4MTgtYWE3My01NWM2YTcyYTg4OWYiLCJpYXQiOjE3NzQ0Njc5MjQsImV4cCI6MTc3NDQ2ODgyNH0.xZx0e-m_O6RUChHhYhMqjy5dQYMRmvxbMOs16RTRmx0",
+        "refreshToken":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNmRhZjEzYS00ZDc5LTQ4MTgtYWE3My01NWM2YTcyYTg4OWYiLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc3NDQ2NzkyNCwiZXhwIjoxNzc1MDcyNzI0fQ.x6t95_U3H06FxNK6FX6KWze64uHpoTjTrS0fu0zbCaM"
+    },
+    {
+        "email":  "week8.bravo.1774467923@finroute.test",
+        "displayName":  "Week8 Bravo",
+        "userId":  "7ec324b1-dced-4517-a0c5-85d3bc3500b7",
+        "accessToken":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3ZWMzMjRiMS1kY2VkLTQ1MTctYTBjNS04NWQzYmMzNTAwYjciLCJpYXQiOjE3NzQ0Njc5MjQsImV4cCI6MTc3NDQ2ODgyNH0.4wzZosnuIhuEO-1gKSe_46igUeSIyo2I8TTvNSnp8zA",
+        "refreshToken":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3ZWMzMjRiMS1kY2VkLTQ1MTctYTBjNS04NWQzYmMzNTAwYjciLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc3NDQ2NzkyNCwiZXhwIjoxNzc1MDcyNzI0fQ.252jJagRdmM9jPwaTGRnp2898iRx240BZGc3u3s0Emw"
+    },
+    {
+        "email":  "week8.charlie.1774467923@finroute.test",
+        "displayName":  "Week8 Charlie",
+        "userId":  "c77e9f09-24d4-4224-a441-219c753430cd",
+        "accessToken":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNzdlOWYwOS0yNGQ0LTQyMjQtYTQ0MS0yMTljNzUzNDMwY2QiLCJpYXQiOjE3NzQ0Njc5MjUsImV4cCI6MTc3NDQ2ODgyNX0.xiOVIp6Xh1IlrXTXUuZS3iTn6CEbBplEx_Rlx28tWV0",
+        "refreshToken":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNzdlOWYwOS0yNGQ0LTQyMjQtYTQ0MS0yMTljNzUzNDMwY2QiLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc3NDQ2NzkyNSwiZXhwIjoxNzc1MDcyNzI1fQ.8ULAM-njJXLrrZ34ObI74USAeiVLC9eRzmdLoAY0WnQ"
+    }
+]

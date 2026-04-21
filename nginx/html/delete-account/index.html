@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FinRoute Hesap Silme</title>
+    <style>
+      :root {
+        --bg: #fff7ed;
+        --card: #ffffff;
+        --text: #111827;
+        --muted: #4b5563;
+        --danger: #dc2626;
+        --border: #fed7aa;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background: linear-gradient(180deg, #ffedd5 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 28px;
+        box-shadow: 0 18px 50px rgba(120, 53, 15, 0.08);
+      }
+
+      h1, h2 {
+        margin-top: 0;
+      }
+
+      p, li {
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--danger);
+        font-weight: 700;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #fee2e2;
+        color: var(--danger);
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <div class="badge">Account Deletion</div>
+        <h1>FinRoute Hesap Silme Talebi</h1>
+        <p>
+          FinRoute hesabınızı uygulama içinden Ayarlar bölümündeki <strong>Hesabımı Sil</strong>
+          akışıyla silebilirsiniz.
+        </p>
+        <p>
+          Uygulamaya erişiminiz yoksa, hesap silme talebinizi aşağıdaki bilgilerle birlikte
+          e-posta yoluyla iletebilirsiniz:
+        </p>
+        <ul>
+          <li>Hesabınıza bağlı e-posta adresi</li>
+          <li>Talebin size ait olduğunu belirten kısa onay metni</li>
+          <li>Varsa destek için ulaşılabilecek ek iletişim bilgisi</li>
+        </ul>
+
+        <h2>Talep Adresi</h2>
+        <p>
+          <a href="mailto:support@finrouteapp.com?subject=FinRoute%20Account%20Deletion%20Request">
+            support@finrouteapp.com
+          </a>
+        </p>
+
+        <h2>Silme Sonrası</h2>
+        <p>
+          Hesap silme talebiniz onaylandığında hesabınıza erişim hemen kapatılır, e-posta adresi
+          ve profil bilgileriniz anonimleştirilir, bildirim tokenınız kaldırılır ve hesabınız
+          30 gün sonrasına kalıcı silme için planlanır.
+        </p>
+        <p>
+          30 günlük pencere tamamlandığında hesap kaydı günlük temizlik işlemiyle kalıcı olarak
+          silinir. Yasal veya güvenlik gerekçesiyle saklanması zorunlu sınırlı kayıtlar varsa,
+          bunlar yalnızca gerekli kapsamda tutulur. Ayrıntılar için
+          <a href="/privacy">Gizlilik Politikası</a> sayfasını inceleyin.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+error.txt
+.DS_Store
+postgres_data/
+redis_data/
+
+.expo/
+backend/.env
+mobile/.env
+mobile/google-services.json
+mobile/GoogleService-Info.plist
