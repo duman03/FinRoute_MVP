@@ -1,2 +1,4 @@
 # FinRoute_MVP
+FinRoute is a mobile finance simulation app built with React Native (Expo) + TypeScript on the client and Node.js + Express + PostgreSQL + Redis/BullMQ on the backend. Users can register, manage a virtual portfolio, follow live market prices, simulate buy/sell trades, complete missions, maintain streaks, view leaderboard rankings, and manage notification settings. FinRoute does not handle real money; it is a learning and simulation product.
+
 FinRoute, istemci tarafında React Native (Expo) + TypeScript, sunucu tarafında Node.js + Express + PostgreSQL + Redis/BullMQ kullanan bir mobil finans simülasyonu uygulamasıdır. Kullanıcılar kayıt olabilir, sanal portföy yönetebilir, canlı piyasa fiyatlarını takip edebilir, alım-satım işlemlerini simüle edebilir, görev ve streak sisteminde ilerleyebilir, leaderboard sıralamalarını görebilir ve bildirim ayarlarını yönetebilir. FinRoute gerçek para işlemi yapmaz; eğitim ve simülasyon amaçlı bir üründür.
